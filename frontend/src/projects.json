@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Portfólio Minimalista",
+    "description": "Desenvolvimento de um portfólio moderno utilizando React, Vite e Tailwind CSS para destacar projetos e habilidades.",
+    "image": "projetoPortifolio.png",
+    "tags": ["React", "Vite", "Tailwind", "JavaScript"]
+  },
+  {
+    "id": 2,
+    "title": "Jogo do Número Secreto",
+    "description": "Jogo de lógica com reconhecimento de voz e manipulação de DOM desenvolvido em JavaScript puro.",
+    "image": "projetoSecretNumber.png",
+    "tags": ["JavaScript", "HTML5", "Web Speech API"]
+  }
+]

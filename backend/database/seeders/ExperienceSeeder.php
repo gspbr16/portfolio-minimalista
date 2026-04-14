@@ -1,0 +1,36 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Experience;
+use Illuminate\Database\Seeder;
+
+class ExperienceSeeder extends Seeder
+{
+    public function run(): void
+    {
+        Experience::create([
+            'company' => 'Célebre Soluções Digitais',
+            'role' => 'Desenvolvedor Júnior Full Stack',
+            'period' => '2025 — Presente',
+            'description' => 'Desenvolvimento de interfaces modernas com React e APIs robustas com Laravel.',
+            'techs' => ['PHP', 'Laravel', 'React', 'MySQL', 'Git']
+        ]);
+
+        Experience::create([
+            'company' => 'Delta Global',
+            'role' => 'Analista de Operações / Sinistros',
+            'period' => '2022 — 2024',
+            'description' => 'Análise de processos críticos e suporte operacional em larga escala.',
+            'techs' => ['SQL', 'Sistemas ERP', 'Análise de Processos']
+        ]);
+
+        Experience::create([
+            'company' => 'Excel Reguladora de Sinistros LTDA',
+            'role' => 'Analista de Sinistro',
+            'period' => '2020 — 2022',
+            'description' => 'Atendimento de sinistros de carga, negociação de valores e controle de pendências financeiras.',
+            'techs' => ['Negociação', 'Análise de Dados', 'Checklist']
+        ]);
+    }
+}

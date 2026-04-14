@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+  --bg-dark: #0B1120;
+  --plus-color: rgba(255, 255, 255, 0.15); 
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: #FFFFFF;
+  min-height: 100vh;
+  /* O Padrão de Cruzes (+) */
+  background-image: 
+    radial-gradient(var(--plus-color) 1px, transparent 1px),
+    radial-gradient(var(--plus-color) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  position: relative;
+}
+
+/* O brilho azul no topo para dar profundidade */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 0%, rgba(0, 209, 255, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Garante que o conteúdo fique acima do fundo */
+main, nav {
+  position: relative;
+  z-index: 10;
+}
